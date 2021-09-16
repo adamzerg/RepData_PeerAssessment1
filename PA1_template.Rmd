@@ -37,10 +37,10 @@ Below code is shown with echo = TRUE that is needed to
 
 ```{r important-computing, cache=TRUE, cache.path="cache/"}
 download.file('https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip'
-              , 'repdata.zip'
+              , 'activity.zip'
               , method='curl' )
               
-unzip("repdata.zip", files = NULL, exdir=".")
+unzip("activity.zip", files = NULL, exdir=".")
 
 activity <- read.csv("activity.csv")
 
